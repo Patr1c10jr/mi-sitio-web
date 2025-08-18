@@ -15,6 +15,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     border-radius: 8px;
+    min-height: calc(100vh - 120px - 40px);
 }
 header {
     background: #007BFF;
@@ -94,4 +95,21 @@ header h1 {
     font-size: 0.9rem;
     margin-top: -10px;
     margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
 }
