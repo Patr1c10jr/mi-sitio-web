@@ -75,3 +75,23 @@ header h1 {
 .btn:hover {
     background: #0056b3;
 }
+/* Estilos adicionales para la página del blog */
+.blog-content {
+    font-size: 1.1rem;
+}
+
+.blog-content h3 a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.blog-content h3 a:hover {
+    text-decoration: underline;
+}
+
+.date {
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
