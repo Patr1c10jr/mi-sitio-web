@@ -1,6 +1,4 @@
-﻿/* =================================== */
-/* Estilos Generales */
-/* =================================== */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -10,62 +8,57 @@ body {
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    border-radius: 8px;
-    min-height: calc(100vh - 120px - 40px);
-}
-
-/* =================================== */
-/* Encabezado y Navegación */
-/* =================================== */
 header {
-    background: #007BFF;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    border-radius: 8px 8px 0 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-.navbar {
     background: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-    border-radius: 0 0 8px 8px;
-    margin-bottom: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    background: #444;
+    color: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
-    padding: 0 15px;
-    font-size: 1.2rem;
+    padding: 10px 15px;
 }
 
 .navbar a:hover {
-    color: #007BFF;
+    background: #555;
 }
 
-/* =================================== */
-/* Estilos de Páginas */
-/* =================================== */
-.section {
-    margin-bottom: 20px;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
 }
 
-/* Estilos de la página de contacto */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+/* Estilos del formulario de contacto */
 .form-group {
     margin-bottom: 15px;
 }
@@ -73,79 +66,79 @@ header h1 {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
 }
 
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
+.form-group input,
 .form-group textarea {
-    height: 150px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.1rem;
-}
-
-.btn:hover {
-    background: #0056b3;
-}
-
-/* Estilos de la página del blog */
-.blog-content {
-    font-size: 1.1rem;
-}
-
-.blog-content h3 a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.blog-content h3 a:hover {
-    text-decoration: underline;
-}
-
-.date {
-    color: #777;
-    font-size: 0.9rem;
-    margin-top: -10px;
-    margin-bottom: 20px;
-}
-
-/* =================================== */
-/* Pie de Página (Footer) */
-/* =================================== */
-footer {
-    text-align: center;
-    padding: 20px;
+    display: inline-block;
     background: #333;
     color: #fff;
-    margin-top: 20px;
-    border-radius: 8px;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
     text-decoration: none;
-    margin: 0 10px;
+    border-radius: 4px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+/* Estilos para la barra de búsqueda */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para las estrellas de calificación */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating > input {
+    display: none;
+}
+
+.rating > label {
+    position: relative;
+    width: 1.1em;
+    font-size: 2rem;
+    color: #ffd700;
+    cursor: pointer;
+}
+
+.rating > label::before {
+    content: "★";
+}
+
+.rating > input:checked ~ label {
+    color: #ffd700;
+}
+
+.rating > input:checked ~ label::before {
+    content: "★";
 }
