@@ -15,4 +15,5 @@ Explora mi blog para encontrar artículos y reflexiones sobre finanzas, contabil
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <p class="post-date">{{ post.date | date: "%-d de %B de %Y" }}</p>
   <p>{{ post.excerpt }}</p>
+
 {% endfor %}
