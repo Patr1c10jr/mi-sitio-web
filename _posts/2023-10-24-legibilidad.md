@@ -10,4 +10,5 @@ A continuación, se muestran los resultados de mi análisis sobre la legibilidad
 
 ![Resultados de la prueba de legibilidad Flesch-Kincaid](PUB7.png)
 
+
 Un alto puntaje en la prueba de Flesch-Kincaid indica que el texto es fácil de leer. Esto es vital para un blog como Risk Investigator, ya que facilita el aprendizaje de conceptos complejos y garantiza que el mensaje llegue de manera efectiva a todos los lectores.
