@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: username/repository # Cambia por tu usuario y repositorio de GitHub
+  branch: main # Cambia si usas otra rama
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - label: "Inicio"
+        name: "index"
+        file: "index.html"
+        fields:
+          - {label: "Título", name: "title", widget: "string"}
+          - {label: "Contenido", name: "body", widget: "markdown"}
+
+      - label: "Fórmula Completa"
+        name: "formula-completa"
+        file: "formula-completa.html"
+        fields:
+          - {label: "Título", name: "title", widget: "string"}
+          - {label: "Contenido", name: "body", widget: "markdown"}
+
+      - label: "Fórmula de Tasación"
+        name: "formula-de-tasacion"
+        file: "formula-de-tasacion.html"
+        fields:
+          - {label: "Título", name: "title", widget: "string"}
+          - {label: "Contenido", name: "body", widget: "markdown"}
+
+      - label: "Contacto"
+        name: "contacto"
+        file: "contacto.html"
+        fields:
+          - {label: "Título", name: "title", widget: "string"}
+          - {label: "Contenido", name: "body", widget: "markdown"}
